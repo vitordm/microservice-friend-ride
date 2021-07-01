@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31229.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{CD07A8B8-986A-4003-B7F1-F42D8E98FE8E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservices", "Microservices", "{E2AA2E27-D21A-4291-AF43-50CDF3DEC6E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{1AA7557D-679E-4373-933A-9BFDDFFED116}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{22A462C1-D40D-4AFB-B1BD-93372AB14466}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendRide.Core.Domain", "FriendRide.Core.Domain\FriendRide.Core.Domain.csproj", "{11F960A4-169A-4FAB-89C8-748FE768C451}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{ED657660-34D1-41DE-9FD2-2DFC198E0AD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendRide.Core.Infra.Crosscutting", "FriendRide.Core.Infra.Crosscutting\FriendRide.Core.Infra.Crosscutting.csproj", "{61F2A22B-83D8-4150-B084-E03729DA3D69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendRide.Core.Infra.IoC", "FriendRide.Core.Infra.IoC\FriendRide.Core.Infra.IoC.csproj", "{DD912223-B222-4213-B5C4-4E501A7896A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendRide.Core.Infra.Bus", "FriendRide.Core.Infra.Bus\FriendRide.Core.Infra.Bus.csproj", "{1F810847-7016-4B8B-A179-2804CB427D43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11F960A4-169A-4FAB-89C8-748FE768C451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11F960A4-169A-4FAB-89C8-748FE768C451}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11F960A4-169A-4FAB-89C8-748FE768C451}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11F960A4-169A-4FAB-89C8-748FE768C451}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61F2A22B-83D8-4150-B084-E03729DA3D69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61F2A22B-83D8-4150-B084-E03729DA3D69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61F2A22B-83D8-4150-B084-E03729DA3D69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61F2A22B-83D8-4150-B084-E03729DA3D69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD912223-B222-4213-B5C4-4E501A7896A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD912223-B222-4213-B5C4-4E501A7896A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD912223-B222-4213-B5C4-4E501A7896A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD912223-B222-4213-B5C4-4E501A7896A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F810847-7016-4B8B-A179-2804CB427D43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F810847-7016-4B8B-A179-2804CB427D43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F810847-7016-4B8B-A179-2804CB427D43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F810847-7016-4B8B-A179-2804CB427D43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{22A462C1-D40D-4AFB-B1BD-93372AB14466} = {CD07A8B8-986A-4003-B7F1-F42D8E98FE8E}
+		{11F960A4-169A-4FAB-89C8-748FE768C451} = {22A462C1-D40D-4AFB-B1BD-93372AB14466}
+		{ED657660-34D1-41DE-9FD2-2DFC198E0AD9} = {CD07A8B8-986A-4003-B7F1-F42D8E98FE8E}
+		{61F2A22B-83D8-4150-B084-E03729DA3D69} = {ED657660-34D1-41DE-9FD2-2DFC198E0AD9}
+		{DD912223-B222-4213-B5C4-4E501A7896A8} = {ED657660-34D1-41DE-9FD2-2DFC198E0AD9}
+		{1F810847-7016-4B8B-A179-2804CB427D43} = {ED657660-34D1-41DE-9FD2-2DFC198E0AD9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EFA11ECF-78A9-4657-B851-38C379729AE9}
+	EndGlobalSection
+EndGlobal

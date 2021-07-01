@@ -1,0 +1,35 @@
+
+		Apis
+			-> PassengersRequests
+			-> DriversOrders
+			
+
+		P1 | P2
+			-> POA - Torres - 01/07
+													-> Salva a requisição na base
+													-> Envia ao MQ a requisição com o Id da Base
+					------------------------------ ApiGerarPedidoDeViagem 
+																----------------------------- RabbitMQ
+		
+		
+											-> Recebe os Pedidos
+											-> Cria na base de dados a centralização do Pedidos e Numero de Pessoas
+											-> Gera um Ticket
+												Gerador de Ordens
+													------------------------------------------> Envia ao MQ a Ordem Gerada
+												
+		M1 -------> Analisa as Ordens Abertas
+						------------------------------------->     RabbitMQ / Gerador de Ordem ?
+						se inscreve em uma ordem
+										
+												
+											-> Gerador de Ordem recebe a info 
+											-> Adiciona o motorista a ordem.
+											-> Notifica o RabbitMQ de requisição liberada com a Ordem X
+											
+											
+											
+											
+											Api de passageiros recebe as ordens realizadas e notifica por SignalR os passageiros
+											
+			
